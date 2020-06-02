@@ -28,5 +28,7 @@ export default {
 }
 .explanationComponent {
   margin-left: -2em;
+  color: rgb(255, 249, 242);
+  text-shadow: 1px 1px 5px black;
 }
 </style>

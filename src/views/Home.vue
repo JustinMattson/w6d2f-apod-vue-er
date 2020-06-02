@@ -1,6 +1,5 @@
 <template>
-  <div id="home" class="home conatiner bg">
-    <!-- :style="background-image: url({{dataObj.url}})"> -->
+  <div id="home" class="home conatiner bg" :style="{backgroundImage: `url(${dataObj.url})`}">
     <div class="row d-flex m-0" style="max-height:98vh">
       <title-comp />
       <div class="col-1 d-flex m-0" style="min-height:75vh">
@@ -33,7 +32,11 @@ export default {
   data() {
     return {};
   },
-  computed: {},
+  computed: {
+    dataObj(){
+      return this.$store.state.dataObj
+    }
+  },
   methods: {
     hitApi() {
       this.$store.dispatch("hitApi");
