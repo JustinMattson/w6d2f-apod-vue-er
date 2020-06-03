@@ -7,16 +7,15 @@
       </div>
       <explanation />
     </div>
-      <date />
-      <div class="col-12 text-muted text-center" style="min-height:2vh;">
-        Brought to you with
-        <img
-          class="m-0 p-0"
-          alt="Vue logo"
-          src="../assets/logo.png"
-          style="width:15px;"
-        /> by Justin Mattson
-      </div>
+    <date />
+    <div class="col-12 text-muted text-center footer" style="min-height:2vh;">
+      Brought to you with
+      <img
+        class="m-0 p-0"
+        alt="Vue logo"
+        src="../assets/logo.png"
+        style="width:15px;"
+      /> by Justin Mattson
     </div>
   </div>
 </template>
@@ -33,8 +32,8 @@ export default {
     return {};
   },
   computed: {
-    dataObj(){
-      return this.$store.state.dataObj
+    dataObj() {
+      return this.$store.state.dataObj;
     }
   },
   methods: {
@@ -63,5 +62,10 @@ export default {
 }
 .action {
   cursor: pointer;
+}
+.footer {
+  margin-left: -2em;
+  color: rgb(255, 249, 242);
+  text-shadow: 1px 1px 5px black;
 }
 </style>
