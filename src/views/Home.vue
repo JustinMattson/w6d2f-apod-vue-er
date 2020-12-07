@@ -51,6 +51,9 @@ export default {
 
 
 <style scoped>
+#app {
+  min-height: 100vh;
+}
 .bg {
   height: 100%;
   background-position: center;
